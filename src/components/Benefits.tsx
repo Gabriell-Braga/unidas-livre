@@ -43,9 +43,9 @@ export default function Benefits() {
       ];      
   
     return (
-      <section id="benefits" className="pb-32 pt-10 md:pt-48 px-10 md:px-40 bg-primary bg-[url('/img/hero-bg-4.png')] bg-cover">
+      <section id="benefits" className="pb-32 pt-10 xl:pt-48 px-10 xl:px-40 bg-primary bg-[url('/img/hero-bg-4.png')] bg-cover">
         <motion.h3 
-            className="text-4xl md:text-5xl font-bold text-center text-white md:mb-8"
+            className="text-4xl xl:text-5xl font-bold text-center text-white xl:mb-8"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -54,14 +54,14 @@ export default function Benefits() {
             Benefícios do Unidas Livre
         </motion.h3>
         <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:mt-20 md:px-44"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-5 xl:mt-20 xl:px-44"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
         >
             {benefits.map(({label, icon: Icon, description}, index) => (
-                <span key={index} className="flex flex-col items-start gap-3 mt-24 md:mt-10 md:px-20">
+                <span key={index} className="flex flex-col items-start gap-3 mt-24 xl:mt-10 xl:px-20">
                     <div className="flex flex-row items-start gap-3 font-bold leading-relaxed text-2xl w-full text-center">
                         <Icon fontSize="large" className="mt-1 w-8 h-8" />
                         {label}

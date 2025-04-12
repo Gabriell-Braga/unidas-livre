@@ -33,15 +33,15 @@ export default function Hero({
   subtitle = "Com o Unidas Livre, você tem um carro 0km com tudo incluso e sem complicações.",
 }: HeroProps) {
   return (
-    <section className="text-center py-16 bg-white pt-40 md:h-[850px] md:bg-[url('/img/hero-bg-1.png')] bg-cover bg-center">
-      <div className="px-10 md:px-28 w-full flex flex-col-reverse md:flex-row items-center justify-between h-full text-white">
+    <section className="text-center py-16 bg-white pt-40 xl:h-[850px] xl:bg-[url('/img/hero-bg-1.png')] bg-cover bg-center">
+      <div className="px-10 xl:px-28 w-full flex flex-col-reverse xl:flex-row items-center justify-between h-full text-white">
         
         {/* Texto deslizando da esquerda */}
         <div
           className="flex flex-col justify-center items-start"
         >
           <motion.h2 
-            className="text-4xl md:text-[76px] font-bold text-primary-focus mb-4 text-start"
+            className="text-4xl xl:text-[76px] font-bold text-primary-focus mb-4 text-start"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -79,8 +79,8 @@ export default function Hero({
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1.2 }}
           >
-            <a href="#contact" className="button border-2 border-primary text-primary rounded-full px-3 md:px-5 py-1 md:py-2 md:text-xl font-semibold cursor-pointer mt-10">Entre em Contato</a>
-            <a href="#benefits" className="button bg-primary text-white rounded-full px-3 md:px-5 py-1 md:py-2 md:text-xl font-semibold cursor-pointer mt-10 border-2 border-primary">Saiba Mais</a>
+            <a href="#contact" className="button border-2 border-primary text-primary rounded-full px-3 xl:px-5 py-1 xl:py-2 xl:text-xl font-semibold cursor-pointer mt-10">Entre em Contato</a>
+            <a href="#benefits" className="button bg-primary text-white rounded-full px-3 xl:px-5 py-1 xl:py-2 xl:text-xl font-semibold cursor-pointer mt-10 border-2 border-primary">Saiba Mais</a>
           </motion.div>
         </div>
 

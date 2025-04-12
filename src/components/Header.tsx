@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 md:px-28 flex justify-between items-center",
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 xl:px-28 flex justify-between items-center",
         !scrolled ? "bg-white py-6 text-primary" : "bg-primary py-3 text-white shadow-md"
       )}
     >
@@ -44,8 +44,8 @@ export default function Header() {
       </a>
 
       {/* Menu desktop */}
-      <nav className="hidden md:flex">
-        <ul className="flex gap-12 text-sm md:text-xl font-semibold items-center">
+      <nav className="hidden xl:flex">
+        <ul className="flex gap-12 text-sm xl:text-xl font-semibold items-center">
           {navItems.map((item, index) => (
             <li key={index} className="relative group">
               <a href={item.href} className="transition">
@@ -59,7 +59,7 @@ export default function Header() {
 
       {/* Botão hamburguer mobile */}
       <button
-        className="md:hidden text-inherit"
+        className="xl:hidden text-inherit"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Menu"
       >
@@ -70,7 +70,7 @@ export default function Header() {
       {menuOpen && (
         <div
           className={clsx(
-            "absolute top-full left-0 w-full bg-white text-primary py-4 px-6 shadow-md md:hidden transition-all duration-300",
+            "absolute top-full left-0 w-full bg-white text-primary py-4 px-6 shadow-md xl:hidden transition-all duration-300",
             scrolled && "!bg-primary text-white"
           )}
         >

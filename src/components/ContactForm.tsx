@@ -13,9 +13,9 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-16 px-10 md:px-40 bg-primary bg-[url('/img/hero-bg-3.png')] bg-cover bg-no-repeat flex flex-col md:flex-row justify-start items-center md:items-end">
+    <section id="contact" className="py-16 px-10 xl:px-40 bg-primary bg-[url('/img/hero-bg-3.png')] bg-cover bg-no-repeat flex flex-col xl:flex-row justify-start items-center xl:items-end">
       <motion.div 
-        className="rounded-3xl md:rounded-4xl shadow-gray-600 shadow-2xl p-10 bg-white text-primary-focus w-full md:w-2/5 h-fit"
+        className="rounded-3xl xl:rounded-4xl shadow-gray-600 shadow-2xl p-10 bg-white text-primary-focus w-full xl:w-2/5 h-fit"
         initial={{ y: 200, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -35,7 +35,7 @@ export default function ContactForm() {
         </form>
       </motion.div>
       <motion.div 
-        className="h-full md:w-1/2 flex flex-col justify-end items-start text-white md:ml-16 mt-10 md:mt-0"
+        className="h-full xl:w-1/2 flex flex-col justify-end items-start text-white xl:ml-16 mt-10 xl:mt-0"
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}

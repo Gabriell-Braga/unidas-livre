@@ -29,8 +29,8 @@ export default function Calculator({ discount = 0 }: { discount?: number }) {
   }, [duration, km, discount])
 
   return (
-    <section id="calculator" className="bg-white py-10 md:h-[800px] ">
-      <div className="px-10 md:px-28 w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-40 h-full text-white">
+    <section id="calculator" className="bg-white py-10 xl:h-[800px] ">
+      <div className="px-10 xl:px-28 w-full flex flex-col xl:flex-row items-center justify-center gap-10 xl:gap-40 h-full text-white">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -45,7 +45,7 @@ export default function Calculator({ discount = 0 }: { discount?: number }) {
           />
         </motion.div>
         <motion.div
-          className="flex flex-col justify-center items-start rounded-3xl md:rounded-4xl shadow-2xl shadow-gray-600 overflow-hidden md:mb-16"
+          className="flex flex-col justify-center items-start rounded-3xl xl:rounded-4xl shadow-2xl shadow-gray-600 overflow-hidden xl:mb-16"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}

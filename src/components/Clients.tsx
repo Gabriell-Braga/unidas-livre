@@ -32,7 +32,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section id="clients" className="px-6 md:px-28 py-32 bg-white flex flex-col items-center justify-center">
+    <section id="clients" className="px-6 xl:px-28 py-32 bg-white flex flex-col items-center justify-center">
       <motion.div 
         className="text-center mb-12"
         initial={{ x: -100, opacity: 0 }}
@@ -40,14 +40,14 @@ export default function Clients() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl md:text-[40px] font-bold text-primary-focus">Nossos Clientes</h2>
-        <p className="text-sm md:text-base text-gray-700">Mais de 1.000 clientes satisfeitos com a Unidas Livre.</p>
+        <h2 className="text-4xl xl:text-[40px] font-bold text-primary-focus">Nossos Clientes</h2>
+        <p className="text-sm xl:text-base text-gray-700">Mais de 1.000 clientes satisfeitos com a Unidas Livre.</p>
       </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full max-w-7xl mt-16 md:mt-0">
+      <div className="grid grid-cols-1 xl:grid-cols-2 xl:grid-cols-4 gap-10 w-full max-w-7xl mt-16 xl:mt-0">
         {clients.map((client, index) => (
           <motion.div 
             key={index} 
-            className="bg-white shadow-gray-400 shadow-lg rounded-2xl md:rounded-3xl p-6 flex flex-col items-center text-center h-full"
+            className="bg-white shadow-gray-400 shadow-lg rounded-2xl xl:rounded-3xl p-6 flex flex-col items-center text-center h-full"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
