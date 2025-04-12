@@ -8,10 +8,13 @@ import Clients from "components/Clients"
 import Footer from "components/Footer"
 import BackToTop from "components/BackToTop"
 import AccessibilityButton from "components/AccessibilityButton"
+import { use } from "react";
 
-export default function DynamicLanding({ params }: { params: { slug: string } }) {
-  const { slug } = params
-  const hasDiscount = slug == "promo-10" // você pode adicionar mais slugs aqui se quiser
+type tParams = Promise<{ slug: string }>;
+
+export default function DynamicLanding({ params }: { params: tParams }) {
+  const { slug } = use(params);
+  const hasDiscount = slug === "promo-10";
 
   console.log("Slug recebido:", slug)
 
@@ -19,7 +22,10 @@ export default function DynamicLanding({ params }: { params: { slug: string } })
     <>
       <Header />
       <Hero
-        title={hasDiscount ? "Promoção Especial: 10% OFF!" : undefined}
+        title={hasDiscount ? (<>
+          Promoção Especial. <br />
+          10% OFF.
+        </>) : undefined}
         subtitle={hasDiscount ? "Aproveite agora a melhor condição do Unidas Livre." : undefined}
       />
       <Calculator discount={hasDiscount ? 0.1 : 0} />
