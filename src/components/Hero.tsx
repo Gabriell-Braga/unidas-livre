@@ -95,7 +95,7 @@ export default function Hero({
             src="/img/carro.png"
             alt="Imagem de carro do Unidas Livre"
             width={900}
-            height={400}
+            height={542}
             priority
           />
         </motion.div>

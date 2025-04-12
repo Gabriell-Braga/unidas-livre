@@ -41,7 +41,7 @@ export default function Calculator({ discount = 0 }: { discount?: number }) {
             src="/img/carro-2.png"
             alt="Imagem de carro do Unidas Livre"
             width={900}
-            height={400}
+            height={447}
           />
         </motion.div>
         <motion.div
