@@ -35,8 +35,8 @@ export default function Clients() {
     <section id="clients" className="px-6 xl:px-28 py-32 bg-white flex flex-col items-center justify-center">
       <motion.div 
         className="text-center mb-12"
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
       >

@@ -42,8 +42,8 @@ export default function Hero({
         >
           <motion.h2 
             className="text-4xl xl:text-[76px] font-bold text-primary-focus mb-4 text-start"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
           >
@@ -51,8 +51,8 @@ export default function Hero({
           </motion.h2>
           <motion.p 
             className="text-lg text-gray-700 mb-8 text-start"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8 }}
           >
@@ -60,8 +60,8 @@ export default function Hero({
           </motion.p>
           <motion.ul 
             className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-primary-focus text-lg font-bold mt-2"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1 }}  
           >
@@ -74,8 +74,8 @@ export default function Hero({
           </motion.ul>
           <motion.div 
             className="flex items-center justify-center mt-10 gap-5"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1.2 }}
           >
@@ -86,8 +86,8 @@ export default function Hero({
 
         {/* Imagem deslizando da direita */}
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
         >
