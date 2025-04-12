@@ -42,7 +42,6 @@ export default function Calculator({ discount = 0 }: { discount?: number }) {
             alt="Imagem de carro do Unidas Livre"
             width={900}
             height={400}
-            sizes="(max-width: 768px) 100vw, 900px"
           />
         </motion.div>
         <motion.div

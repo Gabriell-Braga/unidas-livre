@@ -97,7 +97,6 @@ export default function Hero({
             width={900}
             height={400}
             priority
-            sizes="(max-width: 768px) 100vw, 900px"
           />
         </motion.div>
       </div>
