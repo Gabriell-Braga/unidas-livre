@@ -43,7 +43,7 @@ export default function Benefits() {
       ];      
   
     return (
-      <section id="benefits" className="pb-32 pt-10 xl:pt-48 px-10 xl:px-40 bg-primary bg-[url('/img/hero-bg-4.png')] bg-cover">
+      <section id="benefits" className="pb-32 pt-10 xl:pt-48 px-10 xl:px-40 bg-primary bg-[url('/img/hero-bg-3.webp')] bg-cover">
         <motion.h3 
             className="text-4xl xl:text-5xl font-bold text-center text-white xl:mb-8"
             initial={{ y: 100, opacity: 0 }}

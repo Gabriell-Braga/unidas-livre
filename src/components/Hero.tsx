@@ -33,7 +33,7 @@ export default function Hero({
   subtitle = "Com o Unidas Livre, você tem um carro 0km com tudo incluso e sem complicações.",
 }: HeroProps) {
   return (
-    <section className="text-center py-16 bg-white pt-40 xl:h-[850px] xl:bg-[url('/img/hero-bg-1.png')] bg-cover bg-center">
+    <section className="text-center py-16 bg-white pt-40 xl:h-[850px] xl:bg-[url('/img/hero-bg-1.webp')] bg-cover bg-center">
       <div className="px-10 xl:px-28 w-full flex flex-col-reverse xl:flex-row items-center justify-between h-full text-white">
         
         {/* Texto deslizando da esquerda */}
@@ -96,6 +96,8 @@ export default function Hero({
             alt="Imagem de carro do Unidas Livre"
             width={900}
             height={400}
+            priority
+            sizes="(max-width: 768px) 100vw, 900px"
           />
         </motion.div>
       </div>

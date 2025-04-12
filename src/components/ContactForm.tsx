@@ -13,7 +13,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-16 px-10 xl:px-40 bg-primary bg-[url('/img/hero-bg-3.png')] bg-cover bg-no-repeat flex flex-col xl:flex-row justify-start items-center xl:items-end">
+    <section id="contact" className="py-16 px-10 xl:px-40 bg-primary bg-[url('/img/hero-bg-4.webp')] bg-cover bg-no-repeat flex flex-col xl:flex-row justify-start items-center xl:items-end">
       <motion.div 
         className="rounded-3xl xl:rounded-4xl shadow-gray-600 shadow-2xl p-10 bg-white text-primary-focus w-full xl:w-2/5 h-fit"
         initial={{ y: 200, opacity: 0 }}
