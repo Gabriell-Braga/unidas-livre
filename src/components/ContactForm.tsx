@@ -6,9 +6,19 @@ import { motion } from "framer-motion"
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log("Formulário enviado! Simulando envio: ", e)
+    const formData = new FormData(e.currentTarget)
+
+    const data = {
+      nome: formData.get("nome"),
+      email: formData.get("email"),
+      telefone: formData.get("telefone"),
+      cidade: formData.get("cidade"),
+      mensagem: formData.get("mensagem"),
+    }
+
+    console.log("Formulário enviado:", data)
     setSubmitted(true)
   }
 
@@ -23,11 +33,11 @@ export default function ContactForm() {
       >
         <h3 className="text-3xl font-bold text-center mb-6">Entre em contato</h3>
         <form onSubmit={handleSubmit} className="grid gap-4">
-          <input type="text" placeholder="Nome completo" required className="p-3 border rounded" />
-          <input type="email" placeholder="E-mail" required className="p-3 border rounded" />
-          <input type="tel" placeholder="Telefone" required className="p-3 border rounded" />
-          <input type="text" placeholder="Cidade" required className="p-3 border rounded" />
-          <textarea placeholder="Mensagem" rows={7} required className="p-3 border rounded resize-none" />
+          <input name="nome" type="text" placeholder="Nome completo" required className="p-3 border rounded" />
+          <input name="email" type="email" placeholder="E-mail" required className="p-3 border rounded" />
+          <input name="telefone" type="tel" placeholder="Telefone" required className="p-3 border rounded" />
+          <input name="cidade" type="text" placeholder="Cidade" required className="p-3 border rounded" />
+          <textarea name="mensagem" placeholder="Mensagem" rows={7} required className="p-3 border rounded resize-none" />
           <button type="submit" className="bg-primary text-white font-semibold py-3 rounded hover:bg-primary-hover transition cursor-pointer">
             Enviar
           </button>

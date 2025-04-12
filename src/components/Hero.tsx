@@ -66,7 +66,7 @@ export default function Hero({
             transition={{ duration: 1 }}  
           >
             {benefits.map(({ label, icon: Icon }, index) => (
-              <li key={index} className="flex items-start gap-3 leading-relaxed">
+              <li key={index} className="flex items-start gap-3 leading-relaxed text-start">
                 <Icon className="mt-1 text-primary-focus w-6 h-6" />
                 {label}
               </li>
