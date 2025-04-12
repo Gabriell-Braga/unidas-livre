@@ -55,16 +55,16 @@ export default function Calculator({ discount = 0 }: { discount?: number }) {
             <h3 className="text-5xl font-bold mb-10 text-center">Simule seu plano</h3>
             <form className="flex gap-8 flex-col w-full text-left my-5">
               <div className="w-full">
-                <label className="block mb-1 font-medium">Quanto tempo você precisa?</label>
-                <select value={duration} onChange={e => setDuration(e.target.value)} className="w-full p-2 border rounded">
+                <label htmlFor="tempo-plano" className="block mb-1 font-medium">Quanto tempo você precisa?</label>
+                <select id="tempo-plano" value={duration} onChange={e => setDuration(e.target.value)} className="w-full p-2 border rounded">
                   <option value="12">12 meses</option>
                   <option value="24">24 meses</option>
                   <option value="36">36 meses</option>
                 </select>
               </div>
               <div className="w-full">
-                <label className="block mb-1 font-medium">Quantos KM pretende rodar?</label>
-                <select value={km} onChange={e => setKm(e.target.value)} className="w-full p-2 border rounded   ">
+                <label htmlFor="km-plano" className="block mb-1 font-medium">Quantos KM pretende rodar?</label>
+                <select id="km-plano" value={km} onChange={e => setKm(e.target.value)} className="w-full p-2 border rounded   ">
                   <option value="1000">1.000 km</option>
                   <option value="2000">2.000 km</option>
                   <option value="3000">3.000 km</option>

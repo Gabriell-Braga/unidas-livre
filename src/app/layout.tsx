@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Unidas Livre - Carro por Assinatura",
     description: "Carro 0km com tudo incluso. Assine com praticidade, economia e sem burocracia.",
-    url: "https://seu-site.vercel.app",
+    url: "https://unidas-livre.vercel.app/",
     siteName: "Unidas Livre",
     images: [
       {
-        url: "/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Imagem promocional do Unidas Livre",
+        url: "/img/logo-unidas-livre.png",
+        width: 372,
+        height: 182,
+        alt: "Imagem Logo do Unidas Livre",
       },
     ],
     locale: "pt_BR",
